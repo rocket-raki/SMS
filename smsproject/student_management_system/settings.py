@@ -16,6 +16,15 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# apps.py
+
+from django.apps import AppConfig
+
+class StudentManagementAppConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'student_management_app'
 
 # Application definition
 
